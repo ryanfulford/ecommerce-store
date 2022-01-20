@@ -324,6 +324,11 @@ p.discounted {
 p.newsletterCopy {
   font-size: 0.8rem;
 }
+p.valueTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
 
 ul, li, a, input {
   padding: 0;
@@ -433,6 +438,11 @@ button.menuIcon:focus {
 .navBar .searchCart .searchIcon,
 .navBar .searchCart .bag {
   margin-right: 15px;
+}
+.navBar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .navBar .logo {
   margin-left: 60px;
@@ -561,6 +571,35 @@ header .headerContent .contentContainer {
   width: 65%;
 }
 
+.contactHeader {
+  background-color: #fff5f5;
+  padding-top: 120px;
+}
+.contactHeader .contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contactHeader::after {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background-image: url(../assets/wave.svg);
+  background-color: #fff5f5;
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+}
+
 main section {
   margin-bottom: 90px;
 }
@@ -587,7 +626,7 @@ main section {
 }
 
 .productImgContainer {
-  width: 30%;
+  width: 33.3%;
   text-align: center;
 }
 .productImgContainer img {
@@ -644,6 +683,8 @@ main section {
   border-radius: 10%;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  -webkit-transition: 0.2 ease;
+  transition: 0.2 ease;
 }
 .categoriesContainer .items img {
   width: 100%;
@@ -692,6 +733,178 @@ main section {
 .galleryItems .item img {
   width: 100%;
   display: block;
+}
+
+.shop section {
+  padding: 90px 0;
+  margin: 0;
+}
+
+.inventory h2 {
+  text-align: center;
+}
+.inventory .product {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.inventory .product a {
+  display: block;
+}
+.inventory .product a:hover {
+  -webkit-transform: rotateZ(2deg) translate(5px);
+          transform: rotateZ(2deg) translate(5px);
+}
+.inventory .product a:focus {
+  -webkit-transform: rotateZ(2deg) translate(5px);
+          transform: rotateZ(2deg) translate(5px);
+}
+
+.guarantees {
+  background-color: #fff5f5;
+  position: relative;
+  text-align: center;
+}
+.guarantees::before {
+  content: "";
+  background-image: url(../assets/wave-3.svg);
+  background-position: top center;
+  background-color: #fff5f5;
+  background-size: 100% 60px;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  height: 3rem;
+}
+
+h5 {
+  margin-bottom: 60px;
+}
+
+.shopOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.guaranteeContainer {
+  width: calc(25% - 40px);
+  margin: 0 20px;
+}
+
+.mapFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mapFormContainer .map {
+  width: 50%;
+}
+.mapFormContainer .map iframe {
+  width: 100%;
+}
+
+.contactForm {
+  width: calc(50% - 70px);
+  margin-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input, textarea {
+  padding: 0 0 10px 5px;
+  border: none;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: "Jakarta Sans";
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input::placeholder, textarea::placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #084b6d;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+textarea {
+  min-height: 130px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  font-family: "Jakarta Sans";
+  color: #084b6d;
+  border: none;
+  border-bottom: 1px solid #EEE;
+  border-radius: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #fff;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: 95% center;
+  background-size: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+option {
+  font-family: "Jakarta Sans", sans-serif;
 }
 
 footer {
@@ -776,12 +989,32 @@ footer .social i:hover {
   color: #ffd698;
 }
 
+/* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 @media (max-width: 1000px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  .guarantees .shopOptions {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .guarantees .guaranteeContainer {
+    width: calc(45% - 40px);
+    margin: 0 20px 40px 20px;
+  }
 }
-@media (max-width: 800px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
-}
+/* all of our styles for TABLET devices will go within this breakpoint */
+/* all of our styles for MOBILE devices will go within this breakpoint */
 @media (max-width: 500px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
+  .guarantees .shopOptions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .guarantees .guaranteeContainer {
+    width: 85%;
+    margin: 0 0 50px 0;
+  }
 }

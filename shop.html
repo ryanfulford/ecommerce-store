@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toybox Shop Page</title>
+  <script src="https://kit.fontawesome.com/359f9b0fe9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <!-- Announcement Bar -->
+  <div class="announcements">
+    <div class="wrapper">
+      <p class="smallCopy">Complimentary shipping on orders over $50. Discount applied at checkout.</p>
+    </div> <!-- END .wrapper -->
+  </div> <!-- END .announcements -->
+
+  <nav class="navBar">
+    <div class="wrapper">
+      <input type="checkbox" id="openSidebarMenu">
+      <label for="openSidebarMenu">
+        <img src="./assets/menu-button.svg" alt="Menu button" class="menuIcon">
+      </label>
+  
+      <!-- Slideout Navigation -->
+      <div class="slideoutNav">
+        <div class="buttonContainer">
+          <button>X</button>
+        </div>
+        <nav>
+          <ul class="mainMenu">
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <hr>
+          <ul class="legal">
+            <li><a href="#">Licenses</a></li>
+            <li><a href="#">Style Guide</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </nav>
+      </div> <!-- END .slideoutNav -->
+  
+      <!-- Nav Bar Home Button -->
+      <a href="#" class="logo">
+        <h1>Toybox</h1>
+      </a>
+  
+      <!-- Search Cart -->
+      <div class="searchCart">
+        <button class="menuIcon">
+          <img src="./assets/search.svg" alt="Search Icon" class="searchIcon">
+        </button>
+  
+        <a href="#" class="bag">
+          <img src="./assets/shop-bag.svg" alt="Shopping Bag Icon">
+        </a>
+  
+        <div class="counter">
+          <p class="smallCopy">0</p>
+        </div>
+      </div> <!-- END .searchCart -->
+    </div> <!-- END .wrapper -->
+  </nav> <!-- END .navBar -->
+  <!-- Nav Bar ENDS -->
+
+  <!-- Main Section BEGINS -->
+  <main class="shop">
+    <!-- Inventory Section BEGINS -->
+    <section class="inventory" id="inventory">
+      <div class="wrapper">
+        <h2>All Products</h2>
+        <div class="product">
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/safari-trio.jpg" alt="Wooden safari animal toys">
+              <p class="popularProduct">Safari Trio</p>
+              <p class="price">$49.00 USD</p>
+            </a>
+          </div>
+        
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/octopus.jpg" alt="Wooden octopus toy">
+              <p class="popularProduct">Octopus</p>
+              <p class="discounted">$18.00 USD</p>
+              <p class="price">$15.00 USD</p>
+            </a>
+          </div>
+        
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/crocodile.jpg" alt="Wooden crocodile toy">
+              <p class="popularProduct">Crocodile</p>
+              <p class="price">$18.00 USD</p>
+            </a>
+          </div>
+
+          <!-- New Products BEGIN -->
+          <div class="productImgContainer">
+          <a href="#">
+            <img src="./assets/reef-fish.jpg" alt="Wooden reef fish toy">
+            <p class="popularProduct">Reef Fish</p>
+            <p class="price">$49.00 USD</p>
+          </a>
+          </div>
+
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/spinosaurus.jpg" alt="Wooden spinosaurus toy">
+              <p class="popularProduct">Spinosaurus</p>
+              <p class="price">$18.00 USD</p>
+            </a>
+          </div>
+
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/orca.jpg" alt="Wooden orca toy">
+              <p class="popularProduct">Orca</p>
+              <p class="discounted">$12.00 USD</p>
+              <p class="price">$18.00 USD</p>
+            </a>
+          </div>
+
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/ocean.jpg" alt="Wooden ocean animal toys">
+              <p class="popularProduct">Ocean Trio</p>
+              <p class="price">$18.00 USD</p>
+            </a>
+          </div>
+
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/elephant.jpg" alt="Wooden elephant toy">
+              <p class="popularProduct">Elephant</p>
+              <p class="price">$18.00 USD</p>
+            </a>
+          </div>
+
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/dino-trio.jpg" alt="Wooden dinosaur toys">
+              <p class="popularProduct">Dino Trio</p>
+              <p class="discounted">$49.00 USD</p>
+              <p class="price">$45.00 USD</p>
+            </a>
+          </div>
+
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/crocodile.jpg" alt="Wooden crocodile toy">
+              <p class="popularProduct">Crocodile</p>
+              <p class="price">$18.00 USD</p>
+            </a>
+          </div>
+
+          <div class="productImgContainer">
+            <a href="#">
+              <img src="./assets/brontosaurus.jpg" alt="Wooden brontosaurus toy">
+              <p class="popularProduct">Brontosaurus</p>
+              <p class="price">$18.00 USD</p>
+            </a>
+          </div> <!-- END New Products -->
+        </div> <!-- END .product -->
+      </div> <!-- END .wrapper -->
+    </section>
+
+    <!-- Guarantees Section BEGINS -->
+    <section class="guarantees" id="guarantees">
+      <div class="wrapper">
+        <h5>Our customer guarantees</h5>
+
+        <!-- Container for guarantees -->
+        <div class="shopOptions">
+          <div class="guaranteeContainer">
+            <div class="imgContainer">
+                <img src="./assets/dolly.svg" alt="A shipping dolly" aria-hidden="true">
+            </div>
+            <p class="valueTitle">Express Shipping</p>
+            <p class="newsletterCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+
+          <div class="guaranteeContainer">
+            <div class="imgContainer">
+              <img src="./assets/credit-card.svg" alt="A credit card" aria-hidden="true">
+            </div>
+            <p class="valueTitle">Money-Back Guarantee</p>
+            <p class="newsletterCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+
+          <div class="guaranteeContainer">
+            <div class="imgContainer">
+              <img src="./assets/shipping.svg" alt="Return package icon" aria-hidden="true">
+            </div>
+            <p class="valueTitle">Hassle-Free Returns</p>
+            <p class="newsletterCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+
+          <div class="guaranteeContainer">
+            <div class="imgContainer">
+              <img src="./assets/checkout.svg" alt="Checkout screen" aria-hidden="true">
+            </div>
+            <p class="valueTitle">Simple Checkout</p>
+            <p class="newsletterCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div> <!-- END Container for guarantees -->
+        </div> <!-- END .shopOptions -->
+      </div>  <!-- END .wrapper -->
+    </section> <!-- END Guarantees Section -->
+
+
+    <!-- Instagram Section BEGINS-->
+    <section class="gallery" id="gallery">
+      <div class="wrapper">
+        <h5>Follow us</h5>
+        <h3>Check our Instagram for great content</h3>
+    
+        <div class="galleryItems">
+          <a href="#" class="item">
+            <img src="./assets/01insta.jpg" alt="Wooden giraffe toy">
+          </a>
+    
+          <a href="#" class="item">
+            <img src="./assets/02insta.jpg" alt="Stuffed whale toy">
+          </a>
+    
+          <a href="#" class="item">
+            <img src="./assets/03insta.jpg" alt="Toddler in a red dress">
+          </a>
+    
+          <a href="#" class="item">
+            <img src="./assets/04insta.jpg" alt="Toddler playing with wooden toy">
+          </a>
+    
+          <a href="#" class="item">
+            <img src="./assets/05insta.jpg" alt="Wooden toy safari animals and wooden toy trees">
+          </a>
+    
+          <a href="#" class="item">
+            <img src="./assets/06insta.jpg" alt="Toddler playing with wooden toy animals">
+          </a>
+        </div> <!-- .galleryItems ENDS -->
+      </div> <!-- .wrapper ENDS -->
+    </section>
+    <!-- Instagram Section ENDS -->
+  </main>
+  <!-- Main Section ENDS -->
+
+  <!-- Footer BEGINS -->
+  <footer class="footer" id="footer">
+    <div class="wrapper">
+      <div class="footerFlexContainer">
+  
+        <!-- Logo -->
+        <a href="" class="logo">
+          <h4>Toybox</h4>
+        </a>
+  
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <h5>Stay in the loop</h5>
+          <p class="newsletterCopy">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, similique facere? Nisi sit libero veritatis
+            itaque a!</p>
+  
+          <form action="#">
+            <label for="email" class="sr-only">Enter Your Email</label>
+            <input type="email" id="email">
+            <button class="secondary">Go</button>
+          </form>
+          <p class="smallCopy">We'll never share your email address with third parties</p>
+        </div>
+  
+        <!-- Footer Nav -->
+        <div class="footerNav">
+          <nav>
+            <!-- Shop -->
+            <ul class="footerShop">
+              <li>
+                <h5>Shop</h5>
+              </li>
+              <li><a href="">Safari</a></li>
+              <li><a href="">Ocean</a></li>
+              <li><a href="">Dinos</a></li>
+              <li><a href="" Sale></a></li>
+            </ul>
+  
+            <!-- About -->
+            <ul class="footerAbout">
+              <li>
+                <h5>About</h5>
+              </li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Legal</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+  
+            <!-- Template -->
+            <ul class="footerTemplate">
+              <li>
+                <h5>Template</h5>
+              </li>
+              <li><a href="">Style Guide</a></li>
+              <li><a href="">Licenses</a></li>
+              <li><a href="">Changelog</a></li>
+            </ul>
+          </nav>
+        </div> <!-- END .footerNav -->
+      </div> <!-- END. footerFlexContainer -->
+  
+      <div class="social">
+        <!-- Social Icons -->
+        <div class="socialIcons">
+          <a href="">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <span class="sr-only">Link to Twitter</span>
+          </a>
+  
+          <a href="">
+            <i class="fab fa-pinterest" aria-hidden="true"></i>
+            <span class="sr-only">Link to Pinterest</span>
+          </a>
+  
+          <a href="">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Link to Instagram</span>
+          </a>
+  
+          <a href="">
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+            <span class="sr-only">Link to Facebook</span>
+          </a>
+        </div> <!--  END socialIcons -->
+  
+        <!-- Copyright -->
+        <div class="copyright">
+          <p class="smallCopy">© Copyright Company</p>
+        </div>
+      </div> <!-- END .social -->
+    </div> <!-- END .wrapper -->
+  </footer>
+  <!-- Footer ENDS -->
+</body>
+</html>
